@@ -1,0 +1,10 @@
+{
+  "name": "DLCF FUTA",
+  "short_name": "DLCF",
+  "description": "Deeper Life Campus Fellowship - FUTA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf7",
+  "theme_color": "#1a5632",
+  "icons": []
+}
