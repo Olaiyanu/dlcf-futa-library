@@ -16,14 +16,19 @@ const Register = () => {
   const [showSuccess, setShowSuccess] = useState(false);
   const navigate = useNavigate();
   const { toast } = useToast();
-  const { register } = useAuth();
+  const { register, logout } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     try {
-      // 1. Register the user locally so they are authenticated in the app
+      // 1. Register the user locally
       await register(name, email, password);
+
+      // Log the user out immediately so they don't have access to the dashboard until approved
+      if (logout) {
+        await logout();
+      }
 
       // 2. Send email notification to Admin using Web3Forms
       const response = await fetch("https://api.web3forms.com/submit", {
