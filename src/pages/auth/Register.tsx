@@ -106,7 +106,7 @@ const Register = () => {
           </div>
           <h2 className="font-display text-2xl font-bold text-foreground">Thank You for Registering!</h2>
           <p className="mt-4 text-muted-foreground">
-            The admin will review your details and send your library card to your gmail.
+            The admin will review your details and send your library card to your email after successful accreditation.
           </p>
           <div className="mt-6 rounded-lg bg-secondary/50 p-4 text-sm text-muted-foreground">
             <p><strong>Note:</strong> Some content on the website is still under progress. More updates are coming soon.</p>
